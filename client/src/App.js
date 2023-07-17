@@ -6,6 +6,8 @@ import Detail from "./components/Detail";
 import Form from "./components/Form";
 import LogoBar from "./components/LogoBar";
 import Footer from "./components/Footer";
+import axios from "axios";
+axios.defaults.baseURL = "http://localhost:3001/";
 
 function App() {
   const location = useLocation();
