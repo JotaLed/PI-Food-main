@@ -21,7 +21,7 @@ import {
 export const getRecipesFromAPI = () => {
   return async (dispatch) => {
     try {
-      const response = await axios.get("http://localhost:3001/recipes");
+      const response = await axios.get("/recipes");
       dispatch({ type: GET_RECIPES_FROM_API, payload: response.data });
     } catch (error) {
       console.log(error);
@@ -32,10 +32,7 @@ export const getRecipesFromAPI = () => {
 export const createRecipe = (newRecipe) => {
   return async (dispatch) => {
     try {
-      const response = await axios.post(
-        "http://localhost:3001/recipes",
-        newRecipe
-      );
+      const response = await axios.post("/recipes", newRecipe);
       dispatch({ type: CREATE_RECIPE, payload: response.data });
     } catch (error) {
       console.log(error);
@@ -47,9 +44,7 @@ export const createRecipe = (newRecipe) => {
 export const searchRecipesByName = (name) => {
   return async (dispatch) => {
     try {
-      const response = await axios.get(
-        `http://localhost:3001/recipes/name?name=${name}`
-      );
+      const response = await axios.get(`/recipes/name?name=${name}`);
       dispatch({ type: SEARCH_RECIPES_BY_NAME, payload: response.data });
     } catch (error) {
       console.log(error);
@@ -75,7 +70,7 @@ export const setRecipesToShow = (recipes) => {
 export const getDietsFromAPI = () => {
   return async (dispatch) => {
     try {
-      const response = await axios.get("http://localhost:3001/diets");
+      const response = await axios.get("/diets");
       const diets = response.data;
 
       dispatch({ type: GET_DIETS_FROM_API, payload: diets });
