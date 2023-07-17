@@ -1,0 +1,11 @@
+.logoBar {
+  background-color: #4cd485;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}

@@ -1,0 +1,28 @@
+ul,
+li {
+  list-style: none;
+  display: flex;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonsContainer {
+  display: flex;
+}
+
+.selectedPage {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.disabledButton {
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}

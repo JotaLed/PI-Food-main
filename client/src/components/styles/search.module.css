@@ -1,0 +1,33 @@
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px 10px 0px;
+}
+
+.searchContainer,
+.createContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+.inputs {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

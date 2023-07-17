@@ -1,0 +1,19 @@
+.footer {
+  background-color: #000000;
+  padding: 16px;
+  text-align: center;
+}
+
+.message {
+  font-size: 14px;
+  color: #888;
+  display: inline-block; /* Muestra el párrafo en línea */
+  margin-right: 20px; /* Agrega un margen derecho entre los párrafos */
+}
+
+.loveMessage {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+  display: inline-block; /* Muestra el párrafo en línea */
+}
